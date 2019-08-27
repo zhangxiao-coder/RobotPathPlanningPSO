@@ -10,17 +10,17 @@
 
 typedef struct {
     int ID; 
-    double position_coords[2];
+    double position_coords[2]
     double target_coords[2];
     double distToTarget;
     double stepSize;
     double velocity;
-} robot_t;
+} robot_t;    机器人
 
 typedef struct {
     double *waypoints;
     int numWaypoints;
-} path_t;
+} path_t;  路径
 
 typedef struct {
     double mins[2];
@@ -39,8 +39,8 @@ typedef struct {
     int nhood_topology;
     double nhood_size;
     env_t * env;
-} pso_params_t;
-
+} pso_params_t;  pso 的参数
+ 
 int ** readMap (char * fhandle, int height, int width) {
 
     FILE *file;
